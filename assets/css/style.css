@@ -4,9 +4,9 @@
 
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
 body{
@@ -14,6 +14,7 @@ body{
    font-family: 'Raleway', sans-serif;
    position: relative;
    min-height: 100vh;
+   font-weight: 700;
 
 }
 
@@ -35,6 +36,11 @@ header {
    padding-right: 2rem;
    padding-bottom: 1rem;
    display: inline-block;
+   transition: all .2s ease ;
+}
+
+.navbar li:hover {
+   transform: translate(0px, -5px) skew(0deg, 1deg);
 }
 
 .navbar li a {
@@ -62,11 +68,23 @@ header {
 .principal img {
    width: 100%;
    height: 180px;
-   padding: 0 1rem 0 1rem;
 }
 
 .principal p {
    text-align: center;
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+   color: #fff;
+}
+
+.infantiles, .juveniles, .torneos, .examenes{
+   background-color: #6768FF;
+   margin: 2rem 1rem;
+}
+
+.div__img {
+   padding: 0;
+   margin: 0;
 }
 
 .main__galeria {
@@ -84,6 +102,23 @@ header {
 }
 
 
+/*:::::actividad*/
+.actividad__img-contenedor {
+   display: flex;
+   margin: 2rem;
+
+}
+
+.actividad__img-contenedor p{
+   padding-left: 6rem;
+   padding-top: 6rem;
+}
+
+.actividad__img {
+   width: 35%;
+   height: auto;
+
+}
 
 /*:::::footer*/
 .footer{
@@ -105,7 +140,14 @@ header {
       margin-left: 2rem;
       text-decoration: none;
       padding-bottom: 1rem;
+      transition: all .2s ease;
+      
 }
+
+.footer__navbar li:hover {
+   transform: translate(3px, 0px);
+} 
+
 
 .footer__navbar a {
    text-decoration: none;
@@ -140,13 +182,67 @@ header {
    font-size: 15px;
 }
 
+
+
+/* TABLET */
 @media screen and (max-width:800px){
 
-   .footer .grupo-1{
-       width: 90%;
-       grid-template-columns: repeat(1, 1fr);
-       grid-gap:30px;
-       padding: 35px 0px;
+   .principal {
+      display: block;
+   }
 
+   .img__principal {
+      padding: 0 4rem;
+      height: 250px;
+   }
+
+   .footer .grupo-1{
+      width: 90%;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap:30px;
+      padding: 35px 0px;
+   }
+
+   .actividad__img-contenedor {
+      display: block;
+      background-color: #6768FF;
+   }
+
+
+   .actividad__img-contenedor p {
+      padding: 0;
+      text-align: center;
+      color: #fff;
+      padding-top: .5rem;
+      padding-bottom: 1rem;
+   }
+   .actividad__img {
+      width: 100%;
+   }
+
+
+}
+
+/* MOBILE */
+@media screen and (max-width:560px){
+   .principal {
+      display: block;
+      padding: 0rem .5rem 1rem .5rem ;
+   }
+
+   .img__principal {
+      padding: 1rem;
+      height: 250px;
+   }
+
+   .infatiles, .juveniles, .torneos, .examenes{
+      padding: 1rem 0;
+   }
+
+   .footer .grupo-1{
+      width: 90%;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap:30px;
+      padding: 35px 0px;
    }
 }

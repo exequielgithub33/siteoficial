@@ -5,18 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taekwondo Parana</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/x-icon" href="assets/img/logopage.png">
-
-  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+
     <header>
 
-        <nav class="navbar">
+      <nav class="navbar">
         <ul class="navbar__items">
             <li class="navbar__logo-li">
-              <h1>TAEKWONDO PARANA</h1>
+              <h1 class="animate__animated  animate__backInRight" >TAEKWONDO PARANA</h1>
             </li>
             <li class="navbar__li">
                 <a href="index.html">Inicio</a>
@@ -43,10 +45,11 @@
     </header>
 
     <main>
+
       <img class="img__principal" src="assets/img/feliperociOSI-min.jpg" alt="Formas en el parque">
-      <div class="principal">
-        <div class="infantiles">
-          <img class="div__img" src="assets/img/infantiles-min2.jpg" alt="infantiles">
+      <div class="principal" data-aos="fade-up" >
+        <div class="infantiles" >
+          <a href="./pages/infantiles.html"> <img class="div__img" src="assets/img/infantiles-min2.jpg" alt="infantiles"> </a> 
           <p>Infantiles</p>
         </div>
         <div class="juveniles">
@@ -62,52 +65,51 @@
           <p>Examenes</p>
         </div>
       </div>
-      </section>
 
     </main>
 
-    
-
-
-      <footer class="footer">
-        <div class="grupo-1">
-            <div class="box">
-              <div>
-                <img src="assets/img/logo32.png" alt="logo">
-              </div>
-            </div>
-            <div class="box footer__navbar">
-              <ul>
-                <li class="footer__navbar-li">
-                  <a href="index.html">Inicio</a>
-                </li>
-                <li class="footer__navbar-li">
-                  <a href="./pages/galeria.html"> Galería </a>
-                </li>
-                <li class="footer__navbar-li">
-                    <a href="./pages/actividad.html">Actividad</a>
-                </li>
-                <li class="footer__navbar-li">
-                    <a href="./pages/contacto.html">Contacto</a>
-                </li>
-              </ul>
-            </div>
-            <div class="box">
-                <h2>Redes Sociales</h2>
-                <div class="red-social">
-                  <a href="https://www.facebook.com/exequiel.gimenez.161" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                  <a href="https://www.instagram.com/exequieltkd/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                  <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                </div>
+    <footer class="footer">
+      <div class="grupo-1">
+        <div class="box">
+          <div>
+            <img src="assets/img/logo32.png" alt="logo">
+          </div>
+        </div>
+        <div class="box footer__navbar">
+          <ul>
+            <li class="footer__navbar-li">
+              <a href="index.html">Inicio</a>
+            </li>
+            <li class="footer__navbar-li">
+              <a href="./pages/galeria.html"> Galería </a>
+            </li>
+            <li class="footer__navbar-li">
+                <a href="./pages/actividad.html">Actividad</a>
+            </li>
+            <li class="footer__navbar-li">
+                <a href="./pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+        <div class="box">
+            <h2>Redes Sociales</h2>
+            <div class="red-social">
+              <a href="https://www.facebook.com/exequiel.gimenez.161" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.instagram.com/exequieltkd/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
         </div>
-        <div class="grupo-2">
-            <small>&copy; 2021 <b>Gimenez Omar Exequiel</b> - Todos los Derechos Reservados.</small>
-        </div>
+      </div>
+      <div class="grupo-2">
+          <p>&copy; 2021 <b>Gimenez Omar Exequiel</b> - Todos los Derechos Reservados.</p>
+      </div>
     </footer>
 
 <!-- script  -->
   <script src="https://kit.fontawesome.com/d532c709aa.js" crossorigin="anonymous"></script>
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
