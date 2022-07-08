@@ -1,0 +1,55 @@
+/* PRINCIPAL */
+.img__principal {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 4rem 2.5rem 4rem;
+    
+ }
+ 
+ .principal {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 2.5rem 0 2.5rem;
+ }
+ 
+ .principal a {
+    text-decoration: none ;
+ }
+ 
+ .principal img {
+    width: 100%;
+    height: 180px;
+ }
+ 
+ .principal p {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #fff;
+    background-color:$colorprimario ;
+ }
+ 
+ .principal div {
+    transition: all .2s ease;
+ }
+ 
+ .principal div:hover {
+    transform: translate(0px, -5px);
+ } 
+ 
+ 
+.infantiles, .juveniles, .torneos, .examenes{
+   background-color:$colorprimario;
+   margin: 2rem 1rem;
+   cursor: pointer;
+}
+
+.div__img {
+   padding: 0;
+   margin: 0;
+}
+

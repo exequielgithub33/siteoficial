@@ -1,0 +1,38 @@
+/* NAVEGACIÓN */
+.navbar {
+    background-color: $colorprimario;
+    
+    .navbar__titulo {
+       font-size: 25px;
+
+       a {
+          text-decoration: none;
+          color: #fff;
+       }
+    }
+    
+}
+
+
+.navbar__titulo a:hover {
+    text-decoration: none;
+    color: #fff;
+ }
+ 
+ .navbar li {
+    font-weight: 800px;
+    display: inline-block;
+    transition: all .2s ease ;
+ }
+ 
+ .navbar li:hover {
+    transform: translate(0px, -5px);
+ }
+ 
+ .navbar li a {
+    text-decoration: none;
+    color: #fff;
+    padding-right: .5rem;
+    padding-left: .5rem;
+ }
+ 

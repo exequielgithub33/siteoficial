@@ -24,10 +24,12 @@ header {
 .navbar {
   background-color: #6768FF;
 }
-.navbar .navbar__titulo {
+
+.navbar__titulo {
   font-size: 25px;
 }
-.navbar .navbar__titulo a {
+
+.navbar__titulo a {
   text-decoration: none;
   color: #fff;
 }
@@ -324,4 +326,60 @@ header {
 
 .footer__redes a:hover .fa-whatsapp {
   color: rgb(33, 156, 54);
+}
+
+/* TABLET */
+@media screen and (max-width: 800px) {
+  .principal {
+    display: block;
+  }
+
+  .img__principal {
+    padding: 0 4rem;
+    height: 250px;
+  }
+
+  .actividad__img-contenedor {
+    display: block;
+    background-color: #6768FF;
+  }
+
+  .actividad__img-contenedor p {
+    padding: 0;
+    text-align: center;
+    color: #fff;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .actividad__img {
+    width: 100%;
+  }
+}
+/* MOBILE */
+@media screen and (max-width: 560px) {
+  .principal {
+    display: block;
+    padding: 0rem 0.5rem 1rem 0.5rem;
+  }
+
+  .img__principal {
+    padding: 1rem;
+    height: 250px;
+  }
+
+  .infatiles, .juveniles, .torneos, .examenes {
+    padding: 1rem 0;
+  }
+
+  .footer {
+    bottom: 0;
+  }
+
+  .footer .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
 }/*# sourceMappingURL=style.css.map */

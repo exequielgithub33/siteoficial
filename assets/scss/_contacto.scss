@@ -1,0 +1,62 @@
+
+/* CONTACTO */
+.ingresar {
+    margin: 2rem 0;
+ }
+ 
+ .form {
+    margin: auto;
+    padding: 2rem 3rem;
+    border: 1px solid #6768FF;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.2);
+ }
+ 
+    .form__titulo {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+    text-align: center; 
+    color: #6768FF;
+    }
+ 
+    .form__p {
+    font-weight: 300;
+    }
+ 
+    .form__container {
+    margin-top: 3rem;
+    display: grid;
+    }
+ 
+    .form__grupo {
+    position: relative;
+    color: #6768FF;
+    margin-bottom: 1rem; 
+    }
+ 
+    .form__input {
+    width: 100%;
+    background: none;
+    color: #6768FF;
+    font-size: 1rem;
+    padding: .6rem .3rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #6768FF; 
+    }
+ 
+    .form__reset-password {
+    padding-bottom: 0; 
+    
+    }
+    .form__submit {
+    margin: 0 0 1rem 0;
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color: #6768FF;
+    color: #fff;
+    transition: all .2s ease; 
+    }
+ 
