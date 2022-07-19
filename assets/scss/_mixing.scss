@@ -1,0 +1,4 @@
+@mixin mixColores($backcolor,$color) {
+    background-color: $backcolor;
+    color:$color;
+}

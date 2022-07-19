@@ -22,7 +22,7 @@
  
  .principal img {
     width: 100%;
-    height: 180px;
+    max-width: 90vw;
  }
  
  .principal p {
@@ -30,7 +30,7 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
     color: #fff;
-    background-color:$colorprimario ;
+    background-color: #6768FF;
  }
  
  .principal div {
@@ -41,15 +41,13 @@
     transform: translate(0px, -5px);
  } 
  
+ .infantiles, .juveniles, .torneos, .examenes{
+    background-color: #6768FF;
+    margin: 2rem 1rem;
+    cursor: pointer;
+ }
  
-.infantiles, .juveniles, .torneos, .examenes{
-   background-color:$colorprimario;
-   margin: 2rem 1rem;
-   cursor: pointer;
-}
-
-.div__img {
-   padding: 0;
-   margin: 0;
-}
-
+ .div__img {
+    padding: 0;
+    margin: 0;
+ }

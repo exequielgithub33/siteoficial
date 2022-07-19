@@ -1,7 +1,10 @@
+
+
 /*FOOTER*/
 .footer {
-    color: #fff;
-    background-color: $colorprimario;
+   @include mixColores(#6768FF,  #fff);
+   
+
  }
  
     .footer .col {
@@ -71,8 +74,8 @@
        }
  
        .footer__redes a:hover {
-          color: #24262b;
-          background-color: #ffffff; 
+         @include mixColores( #ffffff,#24262b );
+
        }
  
     .footer__redes-contacto {
@@ -114,7 +117,7 @@
  }
  
  .footer__redes a:hover .fa-facebook {
-    color: $colorprimario;
+    color: #6768FF;
  }
  
  .footer__redes a:hover .fa-instagram {
@@ -124,5 +127,3 @@
  .footer__redes a:hover .fa-whatsapp {
     color: rgb(33, 156, 54);
  }
- 
- 

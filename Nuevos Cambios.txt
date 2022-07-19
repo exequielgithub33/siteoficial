@@ -1,0 +1,54 @@
+
+creacion de un MAP en el archio _variables
+$colores: (
+    colorfondo:#6768FF,
+    colorletra:#fff
+
+);
+/* NAVEGACIÓN */
+.navbar {
+    background-color: map-get($colores,colorfondo);
+}
+
+
+se agrego en la carpeta scss
+el archivo _mixing.scss
+
+
+/*FOOTER*/   se implemento el mixin
+.footer {
+   @include mixColores(#fff,#6768FF );
+ }
+
+   .footer__redes a:hover {
+         @include mixColores( #ffffff,#24262b );
+       }
+
+
+
+uso de @extend 
+.decorationcolor {
+    text-decoration: none;
+    color: #fff;
+}
+.navbar__titulo a {
+ @extend .decorationcolor;
+}
+
+.navbar li a {
+ @extend .decorationcolor;
+ padding-right: .5rem;
+ padding-left: .5rem;
+}
+
+
+-------------SEO
+Seo setrabajo con la paginas
+https://www.fotor.com/
+https://imagecompressor.com/es/
+para optimizacion de imagen
+
+<meta name="keywords" content="taekwondo, taekwon-do, patadas, puños, artes marciales"/>
+<meta name="description" content="Taekwon-do Parana sitio web sobre las practicas de taekwon-do en Parana">
+<!-- TÍTULO -->
+<title>Taekwondo Parana</title>  
